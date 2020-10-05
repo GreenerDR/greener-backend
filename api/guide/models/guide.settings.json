@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "locations",
+  "collectionName": "guides",
   "info": {
-    "name": "location"
+    "name": "guide"
   },
   "options": {
     "increments": true,
@@ -14,40 +14,23 @@
       "required": true
     },
     "description": {
-      "type": "richtext"
-    },
-    "longitude": {
-      "type": "float",
+      "type": "richtext",
       "required": true
-    },
-    "latitude": {
-      "type": "float",
-      "required": true
-    },
-    "phone": {
-      "type": "biginteger"
     },
     "image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
       "required": false
     },
-    "locationType": {
-      "model": "type",
-      "via": "locations"
-    },
-    "address": {
-      "type": "string",
-      "required": false
-    },
-    "url": {
-      "type": "string"
+    "topicGuide": {
+      "via": "guides",
+      "model": "topic"
     }
   }
 }

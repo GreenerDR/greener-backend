@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "name": "topic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "topic": {
+      "type": "string",
+      "required": true
+    },
+    "guides": {
+      "collection": "guide",
+      "via": "topicGuide"
+    }
+  }
+}

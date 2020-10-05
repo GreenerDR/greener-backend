@@ -16,8 +16,8 @@
       "type": "boolean"
     },
     "locations": {
-      "collection": "location",
-      "via": "locationType"
+      "via": "locationType",
+      "collection": "location"
     }
   }
 }
