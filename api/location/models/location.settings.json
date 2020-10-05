@@ -39,8 +39,8 @@
       "required": false
     },
     "locationType": {
-      "model": "type",
-      "via": "locations"
+      "via": "locations",
+      "model": "type"
     },
     "address": {
       "type": "string",

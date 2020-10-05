@@ -55,6 +55,10 @@
     },
     "name": {
       "type": "string"
+    },
+    "assistances": {
+      "via": "user",
+      "collection": "assistance"
     }
   }
 }

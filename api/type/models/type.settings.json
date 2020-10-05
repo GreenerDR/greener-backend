@@ -16,8 +16,12 @@
       "type": "boolean"
     },
     "locations": {
-      "via": "locationType",
-      "collection": "location"
+      "collection": "location",
+      "via": "locationType"
+    },
+    "events": {
+      "via": "eventType",
+      "collection": "event"
     }
   }
 }

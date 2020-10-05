@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assistances",
+  "info": {
+    "name": "assistance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "assistances"
+    },
+    "event": {
+      "via": "eventAssistances",
+      "model": "event"
+    }
+  }
+}

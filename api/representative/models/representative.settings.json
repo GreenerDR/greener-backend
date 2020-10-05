@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "representatives",
+  "info": {
+    "name": "representative"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "url": {
+      "type": "string"
+    },
+    "events": {
+      "via": "eventRepresentative",
+      "collection": "event"
+    }
+  }
+}
