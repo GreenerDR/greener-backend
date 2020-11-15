@@ -37,6 +37,11 @@
     },
     "referenceURL": {
       "type": "string"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": true,
+      "unique": false
     }
   }
 }
