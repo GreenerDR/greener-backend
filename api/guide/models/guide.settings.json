@@ -29,8 +29,14 @@
       "required": false
     },
     "topicGuide": {
-      "via": "guides",
-      "model": "topic"
+      "model": "topic",
+      "via": "guides"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "referenceURL": {
+      "type": "string"
     }
   }
 }
