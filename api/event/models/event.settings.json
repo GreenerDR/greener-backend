@@ -24,17 +24,6 @@
       "type": "richtext",
       "required": false
     },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "eventType": {
       "model": "type",
       "via": "events"
@@ -52,8 +41,8 @@
       "via": "event"
     },
     "images": {
-      "via": "event",
-      "collection": "image"
+      "collection": "image",
+      "via": "event"
     }
   }
 }

@@ -27,20 +27,9 @@
     "phone": {
       "type": "biginteger"
     },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "locationType": {
-      "via": "locations",
-      "model": "type"
+      "model": "type",
+      "via": "locations"
     },
     "address": {
       "type": "string",
@@ -50,8 +39,8 @@
       "type": "string"
     },
     "images": {
-      "via": "location",
-      "collection": "image"
+      "collection": "image",
+      "via": "location"
     }
   }
 }

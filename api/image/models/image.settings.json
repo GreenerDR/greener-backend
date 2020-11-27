@@ -14,16 +14,16 @@
       "required": true
     },
     "location": {
-      "model": "location",
-      "via": "images"
+      "via": "images",
+      "model": "location"
     },
     "guide": {
-      "model": "guide",
-      "via": "images"
+      "via": "images",
+      "model": "guide"
     },
     "event": {
-      "model": "event",
-      "via": "images"
+      "via": "images",
+      "model": "event"
     }
   }
 }
