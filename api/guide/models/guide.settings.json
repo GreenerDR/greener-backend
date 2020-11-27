@@ -42,6 +42,10 @@
       "type": "boolean",
       "default": true,
       "unique": false
+    },
+    "images": {
+      "via": "guide",
+      "collection": "image"
     }
   }
 }

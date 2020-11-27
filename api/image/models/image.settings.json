@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "images",
+  "info": {
+    "name": "Image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "model": "location",
+      "via": "images"
+    },
+    "guide": {
+      "model": "guide",
+      "via": "images"
+    },
+    "event": {
+      "model": "event",
+      "via": "images"
+    }
+  }
+}

@@ -50,6 +50,10 @@
     "eventAssistances": {
       "collection": "assistance",
       "via": "event"
+    },
+    "images": {
+      "via": "event",
+      "collection": "image"
     }
   }
 }

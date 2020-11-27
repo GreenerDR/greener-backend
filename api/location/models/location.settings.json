@@ -48,6 +48,10 @@
     },
     "url": {
       "type": "string"
+    },
+    "images": {
+      "via": "location",
+      "collection": "image"
     }
   }
 }
